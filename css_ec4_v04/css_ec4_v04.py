@@ -20,9 +20,9 @@ try:
 	from .user import *
 except ImportError:
 	pass
-class css_ec4_v03(ControlSurface):
+class css_ec4_v04(ControlSurface):
 	def __init__(self, c_instance):
-		super(css_ec4_v03, self).__init__(c_instance)
+		super(css_ec4_v04, self).__init__(c_instance)
 		with self.component_guard():
 			global _map_modes
 			_map_modes = Live.MidiMap.MapMode
@@ -123,102 +123,54 @@ class css_ec4_v03(ControlSurface):
 			"midi_cc_ch_0_val_12",
 			"midi_cc_ch_0_val_13",
 			"midi_cc_ch_0_val_14",
-			"midi_cc_ch_12_val_19",
+			"midi_cc_ch_0_val_19",
 			"midi_cc_ch_0_val_23",
 			"midi_cc_ch_0_val_27",
 			"midi_cc_ch_0_val_31",
-			"midi_cc_ch_1_val_19",
-			"midi_cc_ch_1_val_23",
-			"midi_cc_ch_1_val_27",
-			"midi_cc_ch_1_val_31",
-			"midi_cc_ch_12_val_18",
-			"midi_cc_ch_1_val_18",
-			"midi_cc_ch_0_val_22",
-			"midi_cc_ch_1_val_22",
-			"midi_cc_ch_0_val_26",
-			"midi_cc_ch_1_val_26",
-			"midi_cc_ch_0_val_30",
-			"midi_cc_ch_1_val_30",
-			"midi_cc_ch_1_val_1",
+			"midi_cc_ch_0_val_18",
 			"midi_cc_ch_0_val_21",
+			"midi_cc_ch_0_val_26",
+			"midi_cc_ch_0_val_30",
+			"midi_cc_ch_0_val_17",
+			"midi_cc_ch_0_val_22",
 			"midi_cc_ch_0_val_25",
 			"midi_cc_ch_0_val_29",
-			"midi_cc_ch_1_val_17",
-			"midi_cc_ch_1_val_21",
-			"midi_cc_ch_1_val_25",
-			"midi_cc_ch_1_val_29",
 			"midi_cc_ch_0_val_15",
-			"midi_cc_ch_12_val_20",
+			"midi_cc_ch_0_val_20",
 			"midi_cc_ch_0_val_24",
 			"midi_cc_ch_0_val_28",
-			"midi_cc_ch_1_val_16",
-			"midi_cc_ch_1_val_20",
-			"midi_cc_ch_1_val_24",
-			"midi_cc_ch_1_val_28",
 			"midi_cc_ch_0_val_32",
-			"midi_cc_ch_1_val_32",
 			"midi_cc_ch_0_val_33",
 			"midi_cc_ch_0_val_37",
 			"midi_cc_ch_0_val_36",
-			"midi_cc_ch_1_val_36",
-			"midi_cc_ch_1_val_33",
-			"midi_cc_ch_1_val_37",
 			"midi_cc_ch_0_val_34",
 			"midi_cc_ch_0_val_38",
 			"midi_cc_ch_0_val_42",
 			"midi_cc_ch_0_val_41",
-			"midi_cc_ch_1_val_41",
 			"midi_cc_ch_0_val_40",
-			"midi_cc_ch_1_val_40",
-			"midi_cc_ch_1_val_34",
-			"midi_cc_ch_1_val_38",
-			"midi_cc_ch_1_val_42",
 			"midi_cc_ch_0_val_35",
 			"midi_cc_ch_0_val_39",
 			"midi_cc_ch_0_val_43",
 			"midi_cc_ch_0_val_47",
-			"midi_cc_ch_1_val_35",
-			"midi_cc_ch_1_val_39",
-			"midi_cc_ch_1_val_43",
 			"midi_cc_ch_0_val_46",
 			"midi_cc_ch_0_val_45",
 			"midi_cc_ch_0_val_44",
-			"midi_cc_ch_1_val_47",
-			"midi_cc_ch_1_val_46",
-			"midi_cc_ch_1_val_45",
-			"midi_cc_ch_1_val_44",
 			"midi_cc_ch_0_val_51",
 			"midi_cc_ch_0_val_55",
 			"midi_cc_ch_0_val_59",
 			"midi_cc_ch_0_val_63",
-			"midi_cc_ch_1_val_51",
-			"midi_cc_ch_1_val_55",
-			"midi_cc_ch_1_val_59",
-			"midi_cc_ch_1_val_63",
 			"midi_cc_ch_0_val_50",
 			"midi_cc_ch_0_val_54",
 			"midi_cc_ch_0_val_58",
-			"midi_cc_ch_1_val_50",
-			"midi_cc_ch_1_val_54",
-			"midi_cc_ch_1_val_58",
 			"midi_cc_ch_0_val_62",
-			"midi_cc_ch_1_val_62",
 			"midi_cc_ch_0_val_48",
-			"midi_cc_ch_1_val_48",
 			"midi_cc_ch_0_val_49",
 			"midi_cc_ch_0_val_53",
 			"midi_cc_ch_0_val_52",
-			"midi_cc_ch_1_val_52",
-			"midi_cc_ch_1_val_49",
-			"midi_cc_ch_1_val_53",
 			"midi_cc_ch_0_val_57",
-			"midi_cc_ch_1_val_57",
 			"midi_cc_ch_0_val_56",
-			"midi_cc_ch_1_val_56",
 			"midi_cc_ch_0_val_61",
 			"midi_cc_ch_0_val_60",
-			"midi_cc_ch_1_val_61",
-			"midi_cc_ch_1_val_60",
 			"midi_cc_ch_0_val_0",
 			"midi_cc_ch_0_val_73",
 			"midi_cc_ch_0_val_77",
@@ -226,7 +178,8 @@ class css_ec4_v03(ControlSurface):
 			"midi_cc_ch_0_val_72",
 			"midi_cc_ch_0_val_76",
 			"midi_cc_ch_0_val_64",
-			"midi_cc_ch_0_val_65"]
+			"midi_cc_ch_0_val_65",
+			"midi_cc_ch_0_val_16"]
 		self.midi_cc_ch_0_val_1 = EncoderElement(MIDI_CC_TYPE, 0, 1, _map_modes.absolute)
 		self.midi_cc_ch_0_val_1.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_1.pre_val = 0
@@ -283,10 +236,10 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_14.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_14.pre_val = 0
 		self.midi_cc_ch_0_val_14.cur_val = 0
-		self.midi_cc_ch_12_val_19 = EncoderElement(MIDI_CC_TYPE, 12, 19, _map_modes.absolute)
-		self.midi_cc_ch_12_val_19.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_12_val_19.pre_val = 0
-		self.midi_cc_ch_12_val_19.cur_val = 0
+		self.midi_cc_ch_0_val_19 = EncoderElement(MIDI_CC_TYPE, 0, 19, _map_modes.absolute)
+		self.midi_cc_ch_0_val_19.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_19.pre_val = 0
+		self.midi_cc_ch_0_val_19.cur_val = 0
 		self.midi_cc_ch_0_val_23 = EncoderElement(MIDI_CC_TYPE, 0, 23, _map_modes.absolute)
 		self.midi_cc_ch_0_val_23.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_23.pre_val = 0
@@ -299,70 +252,30 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_31.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_31.pre_val = 0
 		self.midi_cc_ch_0_val_31.cur_val = 0
-		self.midi_cc_ch_1_val_19 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 19)
-		self.midi_cc_ch_1_val_19.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_19.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_19.pre_val = 0
-		self.midi_cc_ch_1_val_19.cur_val = 0
-		self.midi_cc_ch_1_val_23 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 23)
-		self.midi_cc_ch_1_val_23.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_23.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_23.pre_val = 0
-		self.midi_cc_ch_1_val_23.cur_val = 0
-		self.midi_cc_ch_1_val_27 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 27)
-		self.midi_cc_ch_1_val_27.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_27.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_27.pre_val = 0
-		self.midi_cc_ch_1_val_27.cur_val = 0
-		self.midi_cc_ch_1_val_31 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 31)
-		self.midi_cc_ch_1_val_31.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_31.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_31.pre_val = 0
-		self.midi_cc_ch_1_val_31.cur_val = 0
-		self.midi_cc_ch_12_val_18 = EncoderElement(MIDI_CC_TYPE, 12, 18, _map_modes.absolute)
-		self.midi_cc_ch_12_val_18.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_12_val_18.pre_val = 0
-		self.midi_cc_ch_12_val_18.cur_val = 0
-		self.midi_cc_ch_1_val_18 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 18)
-		self.midi_cc_ch_1_val_18.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_18.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_18.pre_val = 0
-		self.midi_cc_ch_1_val_18.cur_val = 0
-		self.midi_cc_ch_0_val_22 = EncoderElement(MIDI_CC_TYPE, 0, 22, _map_modes.absolute)
-		self.midi_cc_ch_0_val_22.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_0_val_22.pre_val = 0
-		self.midi_cc_ch_0_val_22.cur_val = 0
-		self.midi_cc_ch_1_val_22 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 22)
-		self.midi_cc_ch_1_val_22.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_22.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_22.pre_val = 0
-		self.midi_cc_ch_1_val_22.cur_val = 0
-		self.midi_cc_ch_0_val_26 = EncoderElement(MIDI_CC_TYPE, 0, 26, _map_modes.absolute)
-		self.midi_cc_ch_0_val_26.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_0_val_26.pre_val = 0
-		self.midi_cc_ch_0_val_26.cur_val = 0
-		self.midi_cc_ch_1_val_26 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 26)
-		self.midi_cc_ch_1_val_26.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_26.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_26.pre_val = 0
-		self.midi_cc_ch_1_val_26.cur_val = 0
-		self.midi_cc_ch_0_val_30 = EncoderElement(MIDI_CC_TYPE, 0, 30, _map_modes.absolute)
-		self.midi_cc_ch_0_val_30.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_0_val_30.pre_val = 0
-		self.midi_cc_ch_0_val_30.cur_val = 0
-		self.midi_cc_ch_1_val_30 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 30)
-		self.midi_cc_ch_1_val_30.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_30.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_30.pre_val = 0
-		self.midi_cc_ch_1_val_30.cur_val = 0
-		self.midi_cc_ch_1_val_1 = EncoderElement(MIDI_CC_TYPE, 1, 1, _map_modes.absolute)
-		self.midi_cc_ch_1_val_1.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_1.pre_val = 0
-		self.midi_cc_ch_1_val_1.cur_val = 0
+		self.midi_cc_ch_0_val_18 = EncoderElement(MIDI_CC_TYPE, 0, 18, _map_modes.absolute)
+		self.midi_cc_ch_0_val_18.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_18.pre_val = 0
+		self.midi_cc_ch_0_val_18.cur_val = 0
 		self.midi_cc_ch_0_val_21 = EncoderElement(MIDI_CC_TYPE, 0, 21, _map_modes.absolute)
 		self.midi_cc_ch_0_val_21.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_21.pre_val = 0
 		self.midi_cc_ch_0_val_21.cur_val = 0
+		self.midi_cc_ch_0_val_26 = EncoderElement(MIDI_CC_TYPE, 0, 26, _map_modes.absolute)
+		self.midi_cc_ch_0_val_26.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_26.pre_val = 0
+		self.midi_cc_ch_0_val_26.cur_val = 0
+		self.midi_cc_ch_0_val_30 = EncoderElement(MIDI_CC_TYPE, 0, 30, _map_modes.absolute)
+		self.midi_cc_ch_0_val_30.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_30.pre_val = 0
+		self.midi_cc_ch_0_val_30.cur_val = 0
+		self.midi_cc_ch_0_val_17 = EncoderElement(MIDI_CC_TYPE, 0, 17, _map_modes.absolute)
+		self.midi_cc_ch_0_val_17.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_17.pre_val = 0
+		self.midi_cc_ch_0_val_17.cur_val = 0
+		self.midi_cc_ch_0_val_22 = EncoderElement(MIDI_CC_TYPE, 0, 22, _map_modes.absolute)
+		self.midi_cc_ch_0_val_22.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_22.pre_val = 0
+		self.midi_cc_ch_0_val_22.cur_val = 0
 		self.midi_cc_ch_0_val_25 = EncoderElement(MIDI_CC_TYPE, 0, 25, _map_modes.absolute)
 		self.midi_cc_ch_0_val_25.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_25.pre_val = 0
@@ -371,34 +284,14 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_29.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_29.pre_val = 0
 		self.midi_cc_ch_0_val_29.cur_val = 0
-		self.midi_cc_ch_1_val_17 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 17)
-		self.midi_cc_ch_1_val_17.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_17.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_17.pre_val = 0
-		self.midi_cc_ch_1_val_17.cur_val = 0
-		self.midi_cc_ch_1_val_21 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 21)
-		self.midi_cc_ch_1_val_21.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_21.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_21.pre_val = 0
-		self.midi_cc_ch_1_val_21.cur_val = 0
-		self.midi_cc_ch_1_val_25 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 25)
-		self.midi_cc_ch_1_val_25.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_25.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_25.pre_val = 0
-		self.midi_cc_ch_1_val_25.cur_val = 0
-		self.midi_cc_ch_1_val_29 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 29)
-		self.midi_cc_ch_1_val_29.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_29.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_29.pre_val = 0
-		self.midi_cc_ch_1_val_29.cur_val = 0
 		self.midi_cc_ch_0_val_15 = EncoderElement(MIDI_CC_TYPE, 0, 15, _map_modes.absolute)
 		self.midi_cc_ch_0_val_15.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_15.pre_val = 0
 		self.midi_cc_ch_0_val_15.cur_val = 0
-		self.midi_cc_ch_12_val_20 = EncoderElement(MIDI_CC_TYPE, 12, 20, _map_modes.absolute)
-		self.midi_cc_ch_12_val_20.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_12_val_20.pre_val = 0
-		self.midi_cc_ch_12_val_20.cur_val = 0
+		self.midi_cc_ch_0_val_20 = EncoderElement(MIDI_CC_TYPE, 0, 20, _map_modes.absolute)
+		self.midi_cc_ch_0_val_20.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_20.pre_val = 0
+		self.midi_cc_ch_0_val_20.cur_val = 0
 		self.midi_cc_ch_0_val_24 = EncoderElement(MIDI_CC_TYPE, 0, 24, _map_modes.absolute)
 		self.midi_cc_ch_0_val_24.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_24.pre_val = 0
@@ -407,35 +300,10 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_28.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_28.pre_val = 0
 		self.midi_cc_ch_0_val_28.cur_val = 0
-		self.midi_cc_ch_1_val_16 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 16)
-		self.midi_cc_ch_1_val_16.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_16.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_16.pre_val = 0
-		self.midi_cc_ch_1_val_16.cur_val = 0
-		self.midi_cc_ch_1_val_20 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 20)
-		self.midi_cc_ch_1_val_20.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_20.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_20.pre_val = 0
-		self.midi_cc_ch_1_val_20.cur_val = 0
-		self.midi_cc_ch_1_val_24 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 24)
-		self.midi_cc_ch_1_val_24.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_24.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_24.pre_val = 0
-		self.midi_cc_ch_1_val_24.cur_val = 0
-		self.midi_cc_ch_1_val_28 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 28)
-		self.midi_cc_ch_1_val_28.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_28.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_28.pre_val = 0
-		self.midi_cc_ch_1_val_28.cur_val = 0
 		self.midi_cc_ch_0_val_32 = EncoderElement(MIDI_CC_TYPE, 0, 32, _map_modes.absolute)
 		self.midi_cc_ch_0_val_32.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_32.pre_val = 0
 		self.midi_cc_ch_0_val_32.cur_val = 0
-		self.midi_cc_ch_1_val_32 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 32)
-		self.midi_cc_ch_1_val_32.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_32.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_32.pre_val = 0
-		self.midi_cc_ch_1_val_32.cur_val = 0
 		self.midi_cc_ch_0_val_33 = EncoderElement(MIDI_CC_TYPE, 0, 33, _map_modes.absolute)
 		self.midi_cc_ch_0_val_33.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_33.pre_val = 0
@@ -448,21 +316,6 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_36.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_36.pre_val = 0
 		self.midi_cc_ch_0_val_36.cur_val = 0
-		self.midi_cc_ch_1_val_36 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 36)
-		self.midi_cc_ch_1_val_36.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_36.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_36.pre_val = 0
-		self.midi_cc_ch_1_val_36.cur_val = 0
-		self.midi_cc_ch_1_val_33 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 33)
-		self.midi_cc_ch_1_val_33.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_33.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_33.pre_val = 0
-		self.midi_cc_ch_1_val_33.cur_val = 0
-		self.midi_cc_ch_1_val_37 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 37)
-		self.midi_cc_ch_1_val_37.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_37.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_37.pre_val = 0
-		self.midi_cc_ch_1_val_37.cur_val = 0
 		self.midi_cc_ch_0_val_34 = EncoderElement(MIDI_CC_TYPE, 0, 34, _map_modes.absolute)
 		self.midi_cc_ch_0_val_34.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_34.pre_val = 0
@@ -479,35 +332,10 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_41.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_41.pre_val = 0
 		self.midi_cc_ch_0_val_41.cur_val = 0
-		self.midi_cc_ch_1_val_41 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 41)
-		self.midi_cc_ch_1_val_41.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_41.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_41.pre_val = 0
-		self.midi_cc_ch_1_val_41.cur_val = 0
 		self.midi_cc_ch_0_val_40 = EncoderElement(MIDI_CC_TYPE, 0, 40, _map_modes.absolute)
 		self.midi_cc_ch_0_val_40.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_40.pre_val = 0
 		self.midi_cc_ch_0_val_40.cur_val = 0
-		self.midi_cc_ch_1_val_40 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 40)
-		self.midi_cc_ch_1_val_40.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_40.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_40.pre_val = 0
-		self.midi_cc_ch_1_val_40.cur_val = 0
-		self.midi_cc_ch_1_val_34 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 34)
-		self.midi_cc_ch_1_val_34.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_34.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_34.pre_val = 0
-		self.midi_cc_ch_1_val_34.cur_val = 0
-		self.midi_cc_ch_1_val_38 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 38)
-		self.midi_cc_ch_1_val_38.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_38.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_38.pre_val = 0
-		self.midi_cc_ch_1_val_38.cur_val = 0
-		self.midi_cc_ch_1_val_42 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 42)
-		self.midi_cc_ch_1_val_42.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_42.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_42.pre_val = 0
-		self.midi_cc_ch_1_val_42.cur_val = 0
 		self.midi_cc_ch_0_val_35 = EncoderElement(MIDI_CC_TYPE, 0, 35, _map_modes.absolute)
 		self.midi_cc_ch_0_val_35.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_35.pre_val = 0
@@ -524,21 +352,6 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_47.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_47.pre_val = 0
 		self.midi_cc_ch_0_val_47.cur_val = 0
-		self.midi_cc_ch_1_val_35 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 35)
-		self.midi_cc_ch_1_val_35.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_35.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_35.pre_val = 0
-		self.midi_cc_ch_1_val_35.cur_val = 0
-		self.midi_cc_ch_1_val_39 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 39)
-		self.midi_cc_ch_1_val_39.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_39.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_39.pre_val = 0
-		self.midi_cc_ch_1_val_39.cur_val = 0
-		self.midi_cc_ch_1_val_43 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 43)
-		self.midi_cc_ch_1_val_43.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_43.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_43.pre_val = 0
-		self.midi_cc_ch_1_val_43.cur_val = 0
 		self.midi_cc_ch_0_val_46 = EncoderElement(MIDI_CC_TYPE, 0, 46, _map_modes.absolute)
 		self.midi_cc_ch_0_val_46.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_46.pre_val = 0
@@ -551,26 +364,6 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_44.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_44.pre_val = 0
 		self.midi_cc_ch_0_val_44.cur_val = 0
-		self.midi_cc_ch_1_val_47 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 47)
-		self.midi_cc_ch_1_val_47.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_47.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_47.pre_val = 0
-		self.midi_cc_ch_1_val_47.cur_val = 0
-		self.midi_cc_ch_1_val_46 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 46)
-		self.midi_cc_ch_1_val_46.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_46.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_46.pre_val = 0
-		self.midi_cc_ch_1_val_46.cur_val = 0
-		self.midi_cc_ch_1_val_45 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 45)
-		self.midi_cc_ch_1_val_45.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_45.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_45.pre_val = 0
-		self.midi_cc_ch_1_val_45.cur_val = 0
-		self.midi_cc_ch_1_val_44 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 44)
-		self.midi_cc_ch_1_val_44.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_44.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_44.pre_val = 0
-		self.midi_cc_ch_1_val_44.cur_val = 0
 		self.midi_cc_ch_0_val_51 = EncoderElement(MIDI_CC_TYPE, 0, 51, _map_modes.absolute)
 		self.midi_cc_ch_0_val_51.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_51.pre_val = 0
@@ -587,26 +380,6 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_63.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_63.pre_val = 0
 		self.midi_cc_ch_0_val_63.cur_val = 0
-		self.midi_cc_ch_1_val_51 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 51)
-		self.midi_cc_ch_1_val_51.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_51.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_51.pre_val = 0
-		self.midi_cc_ch_1_val_51.cur_val = 0
-		self.midi_cc_ch_1_val_55 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 55)
-		self.midi_cc_ch_1_val_55.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_55.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_55.pre_val = 0
-		self.midi_cc_ch_1_val_55.cur_val = 0
-		self.midi_cc_ch_1_val_59 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 59)
-		self.midi_cc_ch_1_val_59.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_59.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_59.pre_val = 0
-		self.midi_cc_ch_1_val_59.cur_val = 0
-		self.midi_cc_ch_1_val_63 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 63)
-		self.midi_cc_ch_1_val_63.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_63.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_63.pre_val = 0
-		self.midi_cc_ch_1_val_63.cur_val = 0
 		self.midi_cc_ch_0_val_50 = EncoderElement(MIDI_CC_TYPE, 0, 50, _map_modes.absolute)
 		self.midi_cc_ch_0_val_50.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_50.pre_val = 0
@@ -619,39 +392,14 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_58.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_58.pre_val = 0
 		self.midi_cc_ch_0_val_58.cur_val = 0
-		self.midi_cc_ch_1_val_50 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 50)
-		self.midi_cc_ch_1_val_50.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_50.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_50.pre_val = 0
-		self.midi_cc_ch_1_val_50.cur_val = 0
-		self.midi_cc_ch_1_val_54 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 54)
-		self.midi_cc_ch_1_val_54.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_54.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_54.pre_val = 0
-		self.midi_cc_ch_1_val_54.cur_val = 0
-		self.midi_cc_ch_1_val_58 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 58)
-		self.midi_cc_ch_1_val_58.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_58.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_58.pre_val = 0
-		self.midi_cc_ch_1_val_58.cur_val = 0
 		self.midi_cc_ch_0_val_62 = EncoderElement(MIDI_CC_TYPE, 0, 62, _map_modes.absolute)
 		self.midi_cc_ch_0_val_62.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_62.pre_val = 0
 		self.midi_cc_ch_0_val_62.cur_val = 0
-		self.midi_cc_ch_1_val_62 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 62)
-		self.midi_cc_ch_1_val_62.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_62.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_62.pre_val = 0
-		self.midi_cc_ch_1_val_62.cur_val = 0
 		self.midi_cc_ch_0_val_48 = EncoderElement(MIDI_CC_TYPE, 0, 48, _map_modes.absolute)
 		self.midi_cc_ch_0_val_48.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_48.pre_val = 0
 		self.midi_cc_ch_0_val_48.cur_val = 0
-		self.midi_cc_ch_1_val_48 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 48)
-		self.midi_cc_ch_1_val_48.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_48.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_48.pre_val = 0
-		self.midi_cc_ch_1_val_48.cur_val = 0
 		self.midi_cc_ch_0_val_49 = EncoderElement(MIDI_CC_TYPE, 0, 49, _map_modes.absolute)
 		self.midi_cc_ch_0_val_49.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_49.pre_val = 0
@@ -664,39 +412,14 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_52.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_52.pre_val = 0
 		self.midi_cc_ch_0_val_52.cur_val = 0
-		self.midi_cc_ch_1_val_52 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 52)
-		self.midi_cc_ch_1_val_52.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_52.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_52.pre_val = 0
-		self.midi_cc_ch_1_val_52.cur_val = 0
-		self.midi_cc_ch_1_val_49 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 49)
-		self.midi_cc_ch_1_val_49.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_49.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_49.pre_val = 0
-		self.midi_cc_ch_1_val_49.cur_val = 0
-		self.midi_cc_ch_1_val_53 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 53)
-		self.midi_cc_ch_1_val_53.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_53.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_53.pre_val = 0
-		self.midi_cc_ch_1_val_53.cur_val = 0
 		self.midi_cc_ch_0_val_57 = EncoderElement(MIDI_CC_TYPE, 0, 57, _map_modes.absolute)
 		self.midi_cc_ch_0_val_57.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_57.pre_val = 0
 		self.midi_cc_ch_0_val_57.cur_val = 0
-		self.midi_cc_ch_1_val_57 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 57)
-		self.midi_cc_ch_1_val_57.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_57.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_57.pre_val = 0
-		self.midi_cc_ch_1_val_57.cur_val = 0
 		self.midi_cc_ch_0_val_56 = EncoderElement(MIDI_CC_TYPE, 0, 56, _map_modes.absolute)
 		self.midi_cc_ch_0_val_56.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_56.pre_val = 0
 		self.midi_cc_ch_0_val_56.cur_val = 0
-		self.midi_cc_ch_1_val_56 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 56)
-		self.midi_cc_ch_1_val_56.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_56.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_56.pre_val = 0
-		self.midi_cc_ch_1_val_56.cur_val = 0
 		self.midi_cc_ch_0_val_61 = EncoderElement(MIDI_CC_TYPE, 0, 61, _map_modes.absolute)
 		self.midi_cc_ch_0_val_61.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_61.pre_val = 0
@@ -705,16 +428,6 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_60.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_60.pre_val = 0
 		self.midi_cc_ch_0_val_60.cur_val = 0
-		self.midi_cc_ch_1_val_61 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 61)
-		self.midi_cc_ch_1_val_61.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_61.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_61.pre_val = 0
-		self.midi_cc_ch_1_val_61.cur_val = 0
-		self.midi_cc_ch_1_val_60 = ConfigurableButtonElement(True, MIDI_CC_TYPE, 1, 60)
-		self.midi_cc_ch_1_val_60.set_on_off_values(self.led_on, self.led_off)
-		self.midi_cc_ch_1_val_60.add_value_listener(self.placehold_listener,identify_sender= False)
-		self.midi_cc_ch_1_val_60.pre_val = 0
-		self.midi_cc_ch_1_val_60.cur_val = 0
 		self.midi_cc_ch_0_val_0 = EncoderElement(MIDI_CC_TYPE, 0, 0, _map_modes.absolute)
 		self.midi_cc_ch_0_val_0.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_0.pre_val = 0
@@ -747,6 +460,10 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_65.add_value_listener(self.placehold_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_65.pre_val = 0
 		self.midi_cc_ch_0_val_65.cur_val = 0
+		self.midi_cc_ch_0_val_16 = EncoderElement(MIDI_CC_TYPE, 0, 16, _map_modes.absolute)
+		self.midi_cc_ch_0_val_16.add_value_listener(self.placehold_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_16.pre_val = 0
+		self.midi_cc_ch_0_val_16.cur_val = 0
 	def _mode1_custom_lom_listeners(self, updated_by=False):
 		exclude_list = []
 		if updated_by not in exclude_list:
@@ -759,7 +476,14 @@ class css_ec4_v03(ControlSurface):
 		if updated_by not in exclude_list:
 			try:
 				self.mode1_listener_attach1 = self.song().view
-				self.mode1_listener_attach1.add_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_22)
+				self.mode1_listener_attach1.add_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_50)
+			except:
+				pass
+		exclude_list = []
+		if updated_by not in exclude_list:
+			try:
+				self.mode1_listener_attach2 = self.song().view
+				self.mode1_listener_attach2.add_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_22)
 			except:
 				pass
 		return
@@ -774,15 +498,23 @@ class css_ec4_v03(ControlSurface):
 		exclude_list = []
 		if updated_by not in exclude_list:
 			try:
-				self.mode1_listener_attach1.remove_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_22)
+				self.mode1_listener_attach1.remove_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_50)
 				self.mode1_listener_attach1 = None
+			except:
+				pass
+		exclude_list = []
+		if updated_by not in exclude_list:
+			try:
+				self.mode1_listener_attach2.remove_selected_track_listener(self._mode1_self_song_view_add_selected_track_listener_id_22)
+				self.mode1_listener_attach2 = None
 			except:
 				pass
 		return
 	def _mode1(self):
 		self.show_message("mode 1 is active")
-		self.midi_cc_ch_0_val_1.add_value_listener(self.midi_cc_ch_0_val_1_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_62.add_value_listener(self.midi_cc_ch_0_val_62_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_0.add_value_listener(self.midi_cc_ch_0_val_0_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_1.add_value_listener(self.midi_cc_ch_0_val_1_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_2.add_value_listener(self.midi_cc_ch_0_val_2_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_3.add_value_listener(self.midi_cc_ch_0_val_3_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_4.add_value_listener(self.midi_cc_ch_0_val_4_mode1_listener,identify_sender= False)
@@ -797,6 +529,22 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_12.add_value_listener(self.midi_cc_ch_0_val_12_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_14.add_value_listener(self.midi_cc_ch_0_val_14_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_15.add_value_listener(self.midi_cc_ch_0_val_15_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_16.add_value_listener(self.midi_cc_ch_0_val_16_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_17.add_value_listener(self.midi_cc_ch_0_val_17_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_18.add_value_listener(self.midi_cc_ch_0_val_18_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_19.add_value_listener(self.midi_cc_ch_0_val_19_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_20.add_value_listener(self.midi_cc_ch_0_val_20_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_22.add_value_listener(self.midi_cc_ch_0_val_22_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_21.add_value_listener(self.midi_cc_ch_0_val_21_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_23.add_value_listener(self.midi_cc_ch_0_val_23_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_24.add_value_listener(self.midi_cc_ch_0_val_24_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_25.add_value_listener(self.midi_cc_ch_0_val_25_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_26.add_value_listener(self.midi_cc_ch_0_val_26_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_27.add_value_listener(self.midi_cc_ch_0_val_27_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_28.add_value_listener(self.midi_cc_ch_0_val_28_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_29.add_value_listener(self.midi_cc_ch_0_val_29_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_30.add_value_listener(self.midi_cc_ch_0_val_30_mode1_listener,identify_sender= False)
+		self.midi_cc_ch_0_val_31.add_value_listener(self.midi_cc_ch_0_val_31_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_64.add_value_listener(self.midi_cc_ch_0_val_64_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_68.add_value_listener(self.midi_cc_ch_0_val_68_mode1_listener,identify_sender= False)
 		self.midi_cc_ch_0_val_65.add_value_listener(self.midi_cc_ch_0_val_65_mode1_listener,identify_sender= False)
@@ -814,8 +562,9 @@ class css_ec4_v03(ControlSurface):
 	def _remove_mode1(self):
 		self.show_message("Mode 1 is removed")
 		self.turn_inputs_off()
-		self.midi_cc_ch_0_val_1.remove_value_listener(self.midi_cc_ch_0_val_1_mode1_listener)
+		self.midi_cc_ch_0_val_62.remove_value_listener(self.midi_cc_ch_0_val_62_mode1_listener)
 		self.midi_cc_ch_0_val_0.remove_value_listener(self.midi_cc_ch_0_val_0_mode1_listener)
+		self.midi_cc_ch_0_val_1.remove_value_listener(self.midi_cc_ch_0_val_1_mode1_listener)
 		self.midi_cc_ch_0_val_2.remove_value_listener(self.midi_cc_ch_0_val_2_mode1_listener)
 		self.midi_cc_ch_0_val_3.remove_value_listener(self.midi_cc_ch_0_val_3_mode1_listener)
 		self.midi_cc_ch_0_val_4.remove_value_listener(self.midi_cc_ch_0_val_4_mode1_listener)
@@ -830,6 +579,22 @@ class css_ec4_v03(ControlSurface):
 		self.midi_cc_ch_0_val_12.remove_value_listener(self.midi_cc_ch_0_val_12_mode1_listener)
 		self.midi_cc_ch_0_val_14.remove_value_listener(self.midi_cc_ch_0_val_14_mode1_listener)
 		self.midi_cc_ch_0_val_15.remove_value_listener(self.midi_cc_ch_0_val_15_mode1_listener)
+		self.midi_cc_ch_0_val_16.remove_value_listener(self.midi_cc_ch_0_val_16_mode1_listener)
+		self.midi_cc_ch_0_val_17.remove_value_listener(self.midi_cc_ch_0_val_17_mode1_listener)
+		self.midi_cc_ch_0_val_18.remove_value_listener(self.midi_cc_ch_0_val_18_mode1_listener)
+		self.midi_cc_ch_0_val_19.remove_value_listener(self.midi_cc_ch_0_val_19_mode1_listener)
+		self.midi_cc_ch_0_val_20.remove_value_listener(self.midi_cc_ch_0_val_20_mode1_listener)
+		self.midi_cc_ch_0_val_22.remove_value_listener(self.midi_cc_ch_0_val_22_mode1_listener)
+		self.midi_cc_ch_0_val_21.remove_value_listener(self.midi_cc_ch_0_val_21_mode1_listener)
+		self.midi_cc_ch_0_val_23.remove_value_listener(self.midi_cc_ch_0_val_23_mode1_listener)
+		self.midi_cc_ch_0_val_24.remove_value_listener(self.midi_cc_ch_0_val_24_mode1_listener)
+		self.midi_cc_ch_0_val_25.remove_value_listener(self.midi_cc_ch_0_val_25_mode1_listener)
+		self.midi_cc_ch_0_val_26.remove_value_listener(self.midi_cc_ch_0_val_26_mode1_listener)
+		self.midi_cc_ch_0_val_27.remove_value_listener(self.midi_cc_ch_0_val_27_mode1_listener)
+		self.midi_cc_ch_0_val_28.remove_value_listener(self.midi_cc_ch_0_val_28_mode1_listener)
+		self.midi_cc_ch_0_val_29.remove_value_listener(self.midi_cc_ch_0_val_29_mode1_listener)
+		self.midi_cc_ch_0_val_30.remove_value_listener(self.midi_cc_ch_0_val_30_mode1_listener)
+		self.midi_cc_ch_0_val_31.remove_value_listener(self.midi_cc_ch_0_val_31_mode1_listener)
 		self.midi_cc_ch_0_val_64.remove_value_listener(self.midi_cc_ch_0_val_64_mode1_listener)
 		self.midi_cc_ch_0_val_68.remove_value_listener(self.midi_cc_ch_0_val_68_mode1_listener)
 		self.midi_cc_ch_0_val_65.remove_value_listener(self.midi_cc_ch_0_val_65_mode1_listener)
@@ -845,8 +610,8 @@ class css_ec4_v03(ControlSurface):
 	def _remove_mode3(self):
 		self.show_message("Mode 3 is removed")
 		self.turn_inputs_off()
-	def midi_cc_ch_0_val_1_mode1_listener(self, value):
-		self.midi_cc_ch_0_val_1.cur_val = value 
+	def midi_cc_ch_0_val_62_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_62.cur_val = value 
 		try:
 			reaction_listener_number = 1
 			loop_is_active = False
@@ -854,7 +619,7 @@ class css_ec4_v03(ControlSurface):
 			loop_result_count = 0
 			self.log_message("csslog:" + str(self.song().view.selected_track.view.selected_device.name))
 		except Exception as e:
-			self.log_message("csslog:(EC4 v0.3) There's a problem with 'Action Block 1' in reaction 'Log device parameter names' (from 'THRS was moved' listener) >> ")
+			self.log_message("csslog:(EC4 v0.4) There's a problem with 'Action Block 1' in reaction 'Log device parameter names' (from 'Knob 257 was turned' listener) >> ")
 			self.log_message("csslog: >> " + str(e) )
 		try:
 			reaction_listener_number = 1
@@ -876,15 +641,14 @@ class css_ec4_v03(ControlSurface):
 				loop_number = loop_number + 1
 			loop_is_active = False
 		except Exception as e:
-			self.log_message("csslog:(EC4 v0.3) There's a problem with 'Action Block 2' in reaction 'Log device parameter names' (from 'THRS was moved' listener) >> ")
+			self.log_message("csslog:(EC4 v0.4) There's a problem with 'Action Block 2' in reaction 'Log device parameter names' (from 'Knob 257 was turned' listener) >> ")
 			self.log_message("csslog: >> " + str(e) )
-		if not hasattr(self.midi_cc_ch_0_val_1, "pre_val"):
-			self.midi_cc_ch_0_val_1.pre_val = None
-		if not hasattr(self.midi_cc_ch_0_val_1, "prev_press_time"):
-			self.midi_cc_ch_0_val_1.prev_press_time = time.time()
-		self.pick_brain(self.comp_thrs_id_6)
-		self.midi_cc_ch_0_val_1.pre_val = value
-		self.midi_cc_ch_0_val_1.prev_press_time = time.time()
+		if not hasattr(self.midi_cc_ch_0_val_62, "pre_val"):
+			self.midi_cc_ch_0_val_62.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_62, "prev_press_time"):
+			self.midi_cc_ch_0_val_62.prev_press_time = time.time()
+		self.midi_cc_ch_0_val_62.pre_val = value
+		self.midi_cc_ch_0_val_62.prev_press_time = time.time()
 	def midi_cc_ch_0_val_0_mode1_listener(self, value):
 		self.midi_cc_ch_0_val_0.cur_val = value 
 		if not hasattr(self.midi_cc_ch_0_val_0, "pre_val"):
@@ -894,6 +658,15 @@ class css_ec4_v03(ControlSurface):
 		self.pick_brain(self.comp_deon_id_26)
 		self.midi_cc_ch_0_val_0.pre_val = value
 		self.midi_cc_ch_0_val_0.prev_press_time = time.time()
+	def midi_cc_ch_0_val_1_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_1.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_1, "pre_val"):
+			self.midi_cc_ch_0_val_1.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_1, "prev_press_time"):
+			self.midi_cc_ch_0_val_1.prev_press_time = time.time()
+		self.pick_brain(self.comp_thrs_id_6)
+		self.midi_cc_ch_0_val_1.pre_val = value
+		self.midi_cc_ch_0_val_1.prev_press_time = time.time()
 	def midi_cc_ch_0_val_2_mode1_listener(self, value):
 		self.midi_cc_ch_0_val_2.cur_val = value 
 		if not hasattr(self.midi_cc_ch_0_val_2, "pre_val"):
@@ -1020,6 +793,150 @@ class css_ec4_v03(ControlSurface):
 		self.pick_brain(self.comp_scmx_id_15)
 		self.midi_cc_ch_0_val_15.pre_val = value
 		self.midi_cc_ch_0_val_15.prev_press_time = time.time()
+	def midi_cc_ch_0_val_16_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_16.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_16, "pre_val"):
+			self.midi_cc_ch_0_val_16.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_16, "prev_press_time"):
+			self.midi_cc_ch_0_val_16.prev_press_time = time.time()
+		self.pick_brain(self.glue_deon_id_51)
+		self.midi_cc_ch_0_val_16.pre_val = value
+		self.midi_cc_ch_0_val_16.prev_press_time = time.time()
+	def midi_cc_ch_0_val_17_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_17.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_17, "pre_val"):
+			self.midi_cc_ch_0_val_17.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_17, "prev_press_time"):
+			self.midi_cc_ch_0_val_17.prev_press_time = time.time()
+		self.pick_brain(self.glue_thrs_id_52)
+		self.midi_cc_ch_0_val_17.pre_val = value
+		self.midi_cc_ch_0_val_17.prev_press_time = time.time()
+	def midi_cc_ch_0_val_18_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_18.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_18, "pre_val"):
+			self.midi_cc_ch_0_val_18.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_18, "prev_press_time"):
+			self.midi_cc_ch_0_val_18.prev_press_time = time.time()
+		self.pick_brain(self.glue_rang_id_66)
+		self.midi_cc_ch_0_val_18.pre_val = value
+		self.midi_cc_ch_0_val_18.prev_press_time = time.time()
+	def midi_cc_ch_0_val_19_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_19.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_19, "pre_val"):
+			self.midi_cc_ch_0_val_19.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_19, "prev_press_time"):
+			self.midi_cc_ch_0_val_19.prev_press_time = time.time()
+		self.pick_brain(self.glue_mkup_id_65)
+		self.midi_cc_ch_0_val_19.pre_val = value
+		self.midi_cc_ch_0_val_19.prev_press_time = time.time()
+	def midi_cc_ch_0_val_20_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_20.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_20, "pre_val"):
+			self.midi_cc_ch_0_val_20.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_20, "prev_press_time"):
+			self.midi_cc_ch_0_val_20.prev_press_time = time.time()
+		self.pick_brain(self.glue_atck_id_64)
+		self.midi_cc_ch_0_val_20.pre_val = value
+		self.midi_cc_ch_0_val_20.prev_press_time = time.time()
+	def midi_cc_ch_0_val_22_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_22.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_22, "pre_val"):
+			self.midi_cc_ch_0_val_22.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_22, "prev_press_time"):
+			self.midi_cc_ch_0_val_22.prev_press_time = time.time()
+		self.pick_brain(self.glue_rati_id_63)
+		self.midi_cc_ch_0_val_22.pre_val = value
+		self.midi_cc_ch_0_val_22.prev_press_time = time.time()
+	def midi_cc_ch_0_val_21_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_21.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_21, "pre_val"):
+			self.midi_cc_ch_0_val_21.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_21, "prev_press_time"):
+			self.midi_cc_ch_0_val_21.prev_press_time = time.time()
+		self.pick_brain(self.glue_rels_id_62)
+		self.midi_cc_ch_0_val_21.pre_val = value
+		self.midi_cc_ch_0_val_21.prev_press_time = time.time()
+	def midi_cc_ch_0_val_23_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_23.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_23, "pre_val"):
+			self.midi_cc_ch_0_val_23.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_23, "prev_press_time"):
+			self.midi_cc_ch_0_val_23.prev_press_time = time.time()
+		self.pick_brain(self.glue_drwt_id_61)
+		self.midi_cc_ch_0_val_23.pre_val = value
+		self.midi_cc_ch_0_val_23.prev_press_time = time.time()
+	def midi_cc_ch_0_val_24_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_24.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_24, "pre_val"):
+			self.midi_cc_ch_0_val_24.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_24, "prev_press_time"):
+			self.midi_cc_ch_0_val_24.prev_press_time = time.time()
+		self.pick_brain(self.glue_sclp_id_60)
+		self.midi_cc_ch_0_val_24.pre_val = value
+		self.midi_cc_ch_0_val_24.prev_press_time = time.time()
+	def midi_cc_ch_0_val_25_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_25.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_25, "pre_val"):
+			self.midi_cc_ch_0_val_25.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_25, "prev_press_time"):
+			self.midi_cc_ch_0_val_25.prev_press_time = time.time()
+		self.pick_brain(self.glue_scon_id_59)
+		self.midi_cc_ch_0_val_25.pre_val = value
+		self.midi_cc_ch_0_val_25.prev_press_time = time.time()
+	def midi_cc_ch_0_val_26_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_26.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_26, "pre_val"):
+			self.midi_cc_ch_0_val_26.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_26, "prev_press_time"):
+			self.midi_cc_ch_0_val_26.prev_press_time = time.time()
+		self.pick_brain(self.glue_scgn_id_58)
+		self.midi_cc_ch_0_val_26.pre_val = value
+		self.midi_cc_ch_0_val_26.prev_press_time = time.time()
+	def midi_cc_ch_0_val_27_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_27.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_27, "pre_val"):
+			self.midi_cc_ch_0_val_27.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_27, "prev_press_time"):
+			self.midi_cc_ch_0_val_27.prev_press_time = time.time()
+		self.pick_brain(self.glue_scmx_id_57)
+		self.midi_cc_ch_0_val_27.pre_val = value
+		self.midi_cc_ch_0_val_27.prev_press_time = time.time()
+	def midi_cc_ch_0_val_28_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_28.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_28, "pre_val"):
+			self.midi_cc_ch_0_val_28.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_28, "prev_press_time"):
+			self.midi_cc_ch_0_val_28.prev_press_time = time.time()
+		self.pick_brain(self.glue_eqtp_id_56)
+		self.midi_cc_ch_0_val_28.pre_val = value
+		self.midi_cc_ch_0_val_28.prev_press_time = time.time()
+	def midi_cc_ch_0_val_29_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_29.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_29, "pre_val"):
+			self.midi_cc_ch_0_val_29.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_29, "prev_press_time"):
+			self.midi_cc_ch_0_val_29.prev_press_time = time.time()
+		self.pick_brain(self.glue_eqon_id_55)
+		self.midi_cc_ch_0_val_29.pre_val = value
+		self.midi_cc_ch_0_val_29.prev_press_time = time.time()
+	def midi_cc_ch_0_val_30_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_30.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_30, "pre_val"):
+			self.midi_cc_ch_0_val_30.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_30, "prev_press_time"):
+			self.midi_cc_ch_0_val_30.prev_press_time = time.time()
+		self.pick_brain(self.glue_eqfq_id_54)
+		self.midi_cc_ch_0_val_30.pre_val = value
+		self.midi_cc_ch_0_val_30.prev_press_time = time.time()
+	def midi_cc_ch_0_val_31_mode1_listener(self, value):
+		self.midi_cc_ch_0_val_31.cur_val = value 
+		if not hasattr(self.midi_cc_ch_0_val_31, "pre_val"):
+			self.midi_cc_ch_0_val_31.pre_val = None
+		if not hasattr(self.midi_cc_ch_0_val_31, "prev_press_time"):
+			self.midi_cc_ch_0_val_31.prev_press_time = time.time()
+		self.pick_brain(self.glue_eqgn_id_53)
+		self.midi_cc_ch_0_val_31.pre_val = value
+		self.midi_cc_ch_0_val_31.prev_press_time = time.time()
 	def midi_cc_ch_0_val_64_mode1_listener(self, value):
 		self.midi_cc_ch_0_val_64.cur_val = value 
 		if not hasattr(self.midi_cc_ch_0_val_64, "pre_val"):
@@ -1101,6 +1018,22 @@ class css_ec4_v03(ControlSurface):
 			"comp_scon_id_17",
 			"comp_scgn_id_16",
 			"comp_scmx_id_15",
+			"glue_deon_id_51",
+			"glue_thrs_id_52",
+			"glue_rang_id_66",
+			"glue_mkup_id_65",
+			"glue_atck_id_64",
+			"glue_rati_id_63",
+			"glue_rels_id_62",
+			"glue_drwt_id_61",
+			"glue_sclp_id_60",
+			"glue_scon_id_59",
+			"glue_scgn_id_58",
+			"glue_scmx_id_57",
+			"glue_eqtp_id_56",
+			"glue_eqon_id_55",
+			"glue_eqfq_id_54",
+			"glue_eqgn_id_53",
 			"cheq_deon_id_24",
 			"cheq_hign_id_46",
 			"cheq_gn_id_30",
@@ -1540,10 +1473,442 @@ class css_ec4_v03(ControlSurface):
 		self.comp_scmx_id_15["json_id"] = 15
 		self.comp_scmx_id_15["mapping_name"] = "Comp-SCMX"
 		self.comp_scmx_id_15["mapping_type"] = "Parameter"
+		self.glue_deon_id_51 = {}
+		self.glue_deon_id_51["attached_to"] = "midi_cc_ch_0_val_16"
+		self.glue_deon_id_51["track"] = self.track_num(2)
+		self.glue_deon_id_51["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[0]"
+		self.glue_deon_id_51["element"] = "value"
+		self.glue_deon_id_51["output_type"] = "val"
+		self.glue_deon_id_51["minimum"] = round(0,2)
+		self.glue_deon_id_51["maximum"] = round(100,2)
+		self.glue_deon_id_51["decimal_places"] = 2
+		self.glue_deon_id_51["ui_listener"] = "value"
+		self.glue_deon_id_51["feedback_brain"] = "feedback_range"
+		self.glue_deon_id_51["ctrl_type"] = "absolute"
+		self.glue_deon_id_51["enc_first"] = 126
+		self.glue_deon_id_51["enc_second"] = 127
+		self.glue_deon_id_51["reverse_mode"] = False
+		self.glue_deon_id_51["takeover_mode"] = "None"
+		self.glue_deon_id_51["steps"] = 127
+		self.glue_deon_id_51["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_deon_id_51["LED_feedback"] = "default"
+		self.glue_deon_id_51["LED_feedback_active"] = "1"
+		self.glue_deon_id_51["LED_on"] = "127"
+		self.glue_deon_id_51["LED_off"] = "0"
+		self.glue_deon_id_51["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_16"]
+		self.glue_deon_id_51["snap_to"] = True
+		self.glue_deon_id_51["json_id"] = 51
+		self.glue_deon_id_51["mapping_name"] = "Glue-DeON"
+		self.glue_deon_id_51["mapping_type"] = "Parameter"
+		self.glue_thrs_id_52 = {}
+		self.glue_thrs_id_52["attached_to"] = "midi_cc_ch_0_val_17"
+		self.glue_thrs_id_52["track"] = self.track_num(2)
+		self.glue_thrs_id_52["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[1]"
+		self.glue_thrs_id_52["element"] = "value"
+		self.glue_thrs_id_52["output_type"] = "val"
+		self.glue_thrs_id_52["minimum"] = round(0,2)
+		self.glue_thrs_id_52["maximum"] = round(100,2)
+		self.glue_thrs_id_52["decimal_places"] = 2
+		self.glue_thrs_id_52["ui_listener"] = "value"
+		self.glue_thrs_id_52["feedback_brain"] = "feedback_range"
+		self.glue_thrs_id_52["ctrl_type"] = "absolute"
+		self.glue_thrs_id_52["enc_first"] = 0
+		self.glue_thrs_id_52["enc_second"] = 127
+		self.glue_thrs_id_52["reverse_mode"] = False
+		self.glue_thrs_id_52["takeover_mode"] = "Value scaling"
+		self.glue_thrs_id_52["steps"] = 127
+		self.glue_thrs_id_52["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_thrs_id_52["LED_feedback"] = "default"
+		self.glue_thrs_id_52["LED_feedback_active"] = "1"
+		self.glue_thrs_id_52["LED_on"] = "127"
+		self.glue_thrs_id_52["LED_off"] = "0"
+		self.glue_thrs_id_52["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_17"]
+		self.glue_thrs_id_52["snap_to"] = False
+		self.glue_thrs_id_52["json_id"] = 52
+		self.glue_thrs_id_52["mapping_name"] = "Glue-THRS"
+		self.glue_thrs_id_52["mapping_type"] = "Parameter"
+		self.glue_rang_id_66 = {}
+		self.glue_rang_id_66["attached_to"] = "midi_cc_ch_0_val_18"
+		self.glue_rang_id_66["track"] = self.track_num(2)
+		self.glue_rang_id_66["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[2]"
+		self.glue_rang_id_66["element"] = "value"
+		self.glue_rang_id_66["output_type"] = "val"
+		self.glue_rang_id_66["minimum"] = round(0,2)
+		self.glue_rang_id_66["maximum"] = round(100,2)
+		self.glue_rang_id_66["decimal_places"] = 2
+		self.glue_rang_id_66["ui_listener"] = "value"
+		self.glue_rang_id_66["feedback_brain"] = "feedback_range"
+		self.glue_rang_id_66["ctrl_type"] = "absolute"
+		self.glue_rang_id_66["enc_first"] = 0
+		self.glue_rang_id_66["enc_second"] = 127
+		self.glue_rang_id_66["reverse_mode"] = False
+		self.glue_rang_id_66["takeover_mode"] = "Value scaling"
+		self.glue_rang_id_66["steps"] = 127
+		self.glue_rang_id_66["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_rang_id_66["LED_feedback"] = "default"
+		self.glue_rang_id_66["LED_feedback_active"] = "1"
+		self.glue_rang_id_66["LED_on"] = "127"
+		self.glue_rang_id_66["LED_off"] = "0"
+		self.glue_rang_id_66["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_18"]
+		self.glue_rang_id_66["snap_to"] = False
+		self.glue_rang_id_66["json_id"] = 66
+		self.glue_rang_id_66["mapping_name"] = "Glue-RANG"
+		self.glue_rang_id_66["mapping_type"] = "Parameter"
+		self.glue_mkup_id_65 = {}
+		self.glue_mkup_id_65["attached_to"] = "midi_cc_ch_0_val_19"
+		self.glue_mkup_id_65["track"] = self.track_num(2)
+		self.glue_mkup_id_65["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[3]"
+		self.glue_mkup_id_65["element"] = "value"
+		self.glue_mkup_id_65["output_type"] = "val"
+		self.glue_mkup_id_65["minimum"] = round(0,2)
+		self.glue_mkup_id_65["maximum"] = round(100,2)
+		self.glue_mkup_id_65["decimal_places"] = 2
+		self.glue_mkup_id_65["ui_listener"] = "value"
+		self.glue_mkup_id_65["feedback_brain"] = "feedback_range"
+		self.glue_mkup_id_65["ctrl_type"] = "absolute"
+		self.glue_mkup_id_65["enc_first"] = 0
+		self.glue_mkup_id_65["enc_second"] = 127
+		self.glue_mkup_id_65["reverse_mode"] = False
+		self.glue_mkup_id_65["takeover_mode"] = "Value scaling"
+		self.glue_mkup_id_65["steps"] = 127
+		self.glue_mkup_id_65["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_mkup_id_65["LED_feedback"] = "default"
+		self.glue_mkup_id_65["LED_feedback_active"] = "1"
+		self.glue_mkup_id_65["LED_on"] = "127"
+		self.glue_mkup_id_65["LED_off"] = "0"
+		self.glue_mkup_id_65["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_19"]
+		self.glue_mkup_id_65["snap_to"] = False
+		self.glue_mkup_id_65["json_id"] = 65
+		self.glue_mkup_id_65["mapping_name"] = "Glue-MKUP"
+		self.glue_mkup_id_65["mapping_type"] = "Parameter"
+		self.glue_atck_id_64 = {}
+		self.glue_atck_id_64["attached_to"] = "midi_cc_ch_0_val_20"
+		self.glue_atck_id_64["track"] = self.track_num(2)
+		self.glue_atck_id_64["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[4]"
+		self.glue_atck_id_64["element"] = "value"
+		self.glue_atck_id_64["output_type"] = "val"
+		self.glue_atck_id_64["minimum"] = round(0,2)
+		self.glue_atck_id_64["maximum"] = round(100,2)
+		self.glue_atck_id_64["decimal_places"] = 2
+		self.glue_atck_id_64["ui_listener"] = "value"
+		self.glue_atck_id_64["feedback_brain"] = "feedback_range"
+		self.glue_atck_id_64["ctrl_type"] = "absolute"
+		self.glue_atck_id_64["enc_first"] = 120
+		self.glue_atck_id_64["enc_second"] = 127
+		self.glue_atck_id_64["reverse_mode"] = False
+		self.glue_atck_id_64["takeover_mode"] = "Value scaling"
+		self.glue_atck_id_64["steps"] = 127
+		self.glue_atck_id_64["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_atck_id_64["LED_feedback"] = "default"
+		self.glue_atck_id_64["LED_feedback_active"] = "1"
+		self.glue_atck_id_64["LED_on"] = "127"
+		self.glue_atck_id_64["LED_off"] = "0"
+		self.glue_atck_id_64["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_20"]
+		self.glue_atck_id_64["snap_to"] = False
+		self.glue_atck_id_64["json_id"] = 64
+		self.glue_atck_id_64["mapping_name"] = "Glue-ATCK"
+		self.glue_atck_id_64["mapping_type"] = "Parameter"
+		self.glue_rati_id_63 = {}
+		self.glue_rati_id_63["attached_to"] = "midi_cc_ch_0_val_22"
+		self.glue_rati_id_63["track"] = self.track_num(2)
+		self.glue_rati_id_63["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[5]"
+		self.glue_rati_id_63["element"] = "value"
+		self.glue_rati_id_63["output_type"] = "val"
+		self.glue_rati_id_63["minimum"] = round(0,2)
+		self.glue_rati_id_63["maximum"] = round(100,2)
+		self.glue_rati_id_63["decimal_places"] = 2
+		self.glue_rati_id_63["ui_listener"] = "value"
+		self.glue_rati_id_63["feedback_brain"] = "feedback_range"
+		self.glue_rati_id_63["ctrl_type"] = "absolute"
+		self.glue_rati_id_63["enc_first"] = 125
+		self.glue_rati_id_63["enc_second"] = 127
+		self.glue_rati_id_63["reverse_mode"] = False
+		self.glue_rati_id_63["takeover_mode"] = "Value scaling"
+		self.glue_rati_id_63["steps"] = 127
+		self.glue_rati_id_63["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_rati_id_63["LED_feedback"] = "default"
+		self.glue_rati_id_63["LED_feedback_active"] = "1"
+		self.glue_rati_id_63["LED_on"] = "127"
+		self.glue_rati_id_63["LED_off"] = "0"
+		self.glue_rati_id_63["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_22"]
+		self.glue_rati_id_63["snap_to"] = False
+		self.glue_rati_id_63["json_id"] = 63
+		self.glue_rati_id_63["mapping_name"] = "Glue-RATI"
+		self.glue_rati_id_63["mapping_type"] = "Parameter"
+		self.glue_rels_id_62 = {}
+		self.glue_rels_id_62["attached_to"] = "midi_cc_ch_0_val_21"
+		self.glue_rels_id_62["track"] = self.track_num(2)
+		self.glue_rels_id_62["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[6]"
+		self.glue_rels_id_62["element"] = "value"
+		self.glue_rels_id_62["output_type"] = "val"
+		self.glue_rels_id_62["minimum"] = round(0,2)
+		self.glue_rels_id_62["maximum"] = round(100,2)
+		self.glue_rels_id_62["decimal_places"] = 2
+		self.glue_rels_id_62["ui_listener"] = "value"
+		self.glue_rels_id_62["feedback_brain"] = "feedback_range"
+		self.glue_rels_id_62["ctrl_type"] = "absolute"
+		self.glue_rels_id_62["enc_first"] = 120
+		self.glue_rels_id_62["enc_second"] = 127
+		self.glue_rels_id_62["reverse_mode"] = False
+		self.glue_rels_id_62["takeover_mode"] = "Value scaling"
+		self.glue_rels_id_62["steps"] = 127
+		self.glue_rels_id_62["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_rels_id_62["LED_feedback"] = "default"
+		self.glue_rels_id_62["LED_feedback_active"] = "1"
+		self.glue_rels_id_62["LED_on"] = "127"
+		self.glue_rels_id_62["LED_off"] = "0"
+		self.glue_rels_id_62["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_21"]
+		self.glue_rels_id_62["snap_to"] = False
+		self.glue_rels_id_62["json_id"] = 62
+		self.glue_rels_id_62["mapping_name"] = "Glue-RELS"
+		self.glue_rels_id_62["mapping_type"] = "Parameter"
+		self.glue_drwt_id_61 = {}
+		self.glue_drwt_id_61["attached_to"] = "midi_cc_ch_0_val_23"
+		self.glue_drwt_id_61["track"] = self.track_num(2)
+		self.glue_drwt_id_61["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[7]"
+		self.glue_drwt_id_61["element"] = "value"
+		self.glue_drwt_id_61["output_type"] = "val"
+		self.glue_drwt_id_61["minimum"] = round(0,2)
+		self.glue_drwt_id_61["maximum"] = round(100,2)
+		self.glue_drwt_id_61["decimal_places"] = 2
+		self.glue_drwt_id_61["ui_listener"] = "value"
+		self.glue_drwt_id_61["feedback_brain"] = "feedback_range"
+		self.glue_drwt_id_61["ctrl_type"] = "absolute"
+		self.glue_drwt_id_61["enc_first"] = 0
+		self.glue_drwt_id_61["enc_second"] = 127
+		self.glue_drwt_id_61["reverse_mode"] = False
+		self.glue_drwt_id_61["takeover_mode"] = "Value scaling"
+		self.glue_drwt_id_61["steps"] = 127
+		self.glue_drwt_id_61["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_drwt_id_61["LED_feedback"] = "default"
+		self.glue_drwt_id_61["LED_feedback_active"] = "1"
+		self.glue_drwt_id_61["LED_on"] = "127"
+		self.glue_drwt_id_61["LED_off"] = "0"
+		self.glue_drwt_id_61["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_23"]
+		self.glue_drwt_id_61["snap_to"] = False
+		self.glue_drwt_id_61["json_id"] = 61
+		self.glue_drwt_id_61["mapping_name"] = "Glue-DRWT"
+		self.glue_drwt_id_61["mapping_type"] = "Parameter"
+		self.glue_sclp_id_60 = {}
+		self.glue_sclp_id_60["attached_to"] = "midi_cc_ch_0_val_24"
+		self.glue_sclp_id_60["track"] = self.track_num(2)
+		self.glue_sclp_id_60["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[8]"
+		self.glue_sclp_id_60["element"] = "value"
+		self.glue_sclp_id_60["output_type"] = "val"
+		self.glue_sclp_id_60["minimum"] = round(0,2)
+		self.glue_sclp_id_60["maximum"] = round(100,2)
+		self.glue_sclp_id_60["decimal_places"] = 2
+		self.glue_sclp_id_60["ui_listener"] = "value"
+		self.glue_sclp_id_60["feedback_brain"] = "feedback_range"
+		self.glue_sclp_id_60["ctrl_type"] = "absolute"
+		self.glue_sclp_id_60["enc_first"] = 126
+		self.glue_sclp_id_60["enc_second"] = 127
+		self.glue_sclp_id_60["reverse_mode"] = False
+		self.glue_sclp_id_60["takeover_mode"] = "None"
+		self.glue_sclp_id_60["steps"] = 127
+		self.glue_sclp_id_60["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_sclp_id_60["LED_feedback"] = "default"
+		self.glue_sclp_id_60["LED_feedback_active"] = "1"
+		self.glue_sclp_id_60["LED_on"] = "127"
+		self.glue_sclp_id_60["LED_off"] = "0"
+		self.glue_sclp_id_60["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_24"]
+		self.glue_sclp_id_60["snap_to"] = False
+		self.glue_sclp_id_60["json_id"] = 60
+		self.glue_sclp_id_60["mapping_name"] = "Glue-SCLP"
+		self.glue_sclp_id_60["mapping_type"] = "Parameter"
+		self.glue_scon_id_59 = {}
+		self.glue_scon_id_59["attached_to"] = "midi_cc_ch_0_val_25"
+		self.glue_scon_id_59["track"] = self.track_num(2)
+		self.glue_scon_id_59["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[9]"
+		self.glue_scon_id_59["element"] = "value"
+		self.glue_scon_id_59["output_type"] = "val"
+		self.glue_scon_id_59["minimum"] = round(0,2)
+		self.glue_scon_id_59["maximum"] = round(100,2)
+		self.glue_scon_id_59["decimal_places"] = 2
+		self.glue_scon_id_59["ui_listener"] = "value"
+		self.glue_scon_id_59["feedback_brain"] = "feedback_range"
+		self.glue_scon_id_59["ctrl_type"] = "absolute"
+		self.glue_scon_id_59["enc_first"] = 126
+		self.glue_scon_id_59["enc_second"] = 127
+		self.glue_scon_id_59["reverse_mode"] = False
+		self.glue_scon_id_59["takeover_mode"] = "None"
+		self.glue_scon_id_59["steps"] = 127
+		self.glue_scon_id_59["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_scon_id_59["LED_feedback"] = "default"
+		self.glue_scon_id_59["LED_feedback_active"] = "1"
+		self.glue_scon_id_59["LED_on"] = "127"
+		self.glue_scon_id_59["LED_off"] = "0"
+		self.glue_scon_id_59["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_25"]
+		self.glue_scon_id_59["snap_to"] = True
+		self.glue_scon_id_59["json_id"] = 59
+		self.glue_scon_id_59["mapping_name"] = "Glue-SCON"
+		self.glue_scon_id_59["mapping_type"] = "Parameter"
+		self.glue_scgn_id_58 = {}
+		self.glue_scgn_id_58["attached_to"] = "midi_cc_ch_0_val_26"
+		self.glue_scgn_id_58["track"] = self.track_num(2)
+		self.glue_scgn_id_58["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[10]"
+		self.glue_scgn_id_58["element"] = "value"
+		self.glue_scgn_id_58["output_type"] = "val"
+		self.glue_scgn_id_58["minimum"] = round(0,2)
+		self.glue_scgn_id_58["maximum"] = round(100,2)
+		self.glue_scgn_id_58["decimal_places"] = 2
+		self.glue_scgn_id_58["ui_listener"] = "value"
+		self.glue_scgn_id_58["feedback_brain"] = "feedback_range"
+		self.glue_scgn_id_58["ctrl_type"] = "absolute"
+		self.glue_scgn_id_58["enc_first"] = 0
+		self.glue_scgn_id_58["enc_second"] = 127
+		self.glue_scgn_id_58["reverse_mode"] = False
+		self.glue_scgn_id_58["takeover_mode"] = "Value scaling"
+		self.glue_scgn_id_58["steps"] = 127
+		self.glue_scgn_id_58["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_scgn_id_58["LED_feedback"] = "default"
+		self.glue_scgn_id_58["LED_feedback_active"] = "1"
+		self.glue_scgn_id_58["LED_on"] = "127"
+		self.glue_scgn_id_58["LED_off"] = "0"
+		self.glue_scgn_id_58["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_26"]
+		self.glue_scgn_id_58["snap_to"] = False
+		self.glue_scgn_id_58["json_id"] = 58
+		self.glue_scgn_id_58["mapping_name"] = "Glue-SCGN"
+		self.glue_scgn_id_58["mapping_type"] = "Parameter"
+		self.glue_scmx_id_57 = {}
+		self.glue_scmx_id_57["attached_to"] = "midi_cc_ch_0_val_27"
+		self.glue_scmx_id_57["track"] = self.track_num(2)
+		self.glue_scmx_id_57["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[11]"
+		self.glue_scmx_id_57["element"] = "value"
+		self.glue_scmx_id_57["output_type"] = "val"
+		self.glue_scmx_id_57["minimum"] = round(0,2)
+		self.glue_scmx_id_57["maximum"] = round(100,2)
+		self.glue_scmx_id_57["decimal_places"] = 2
+		self.glue_scmx_id_57["ui_listener"] = "value"
+		self.glue_scmx_id_57["feedback_brain"] = "feedback_range"
+		self.glue_scmx_id_57["ctrl_type"] = "absolute"
+		self.glue_scmx_id_57["enc_first"] = 0
+		self.glue_scmx_id_57["enc_second"] = 127
+		self.glue_scmx_id_57["reverse_mode"] = False
+		self.glue_scmx_id_57["takeover_mode"] = "Value scaling"
+		self.glue_scmx_id_57["steps"] = 127
+		self.glue_scmx_id_57["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_scmx_id_57["LED_feedback"] = "default"
+		self.glue_scmx_id_57["LED_feedback_active"] = "1"
+		self.glue_scmx_id_57["LED_on"] = "127"
+		self.glue_scmx_id_57["LED_off"] = "0"
+		self.glue_scmx_id_57["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_27"]
+		self.glue_scmx_id_57["snap_to"] = True
+		self.glue_scmx_id_57["json_id"] = 57
+		self.glue_scmx_id_57["mapping_name"] = "Glue-SCMX"
+		self.glue_scmx_id_57["mapping_type"] = "Parameter"
+		self.glue_eqtp_id_56 = {}
+		self.glue_eqtp_id_56["attached_to"] = "midi_cc_ch_0_val_28"
+		self.glue_eqtp_id_56["track"] = self.track_num(2)
+		self.glue_eqtp_id_56["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[12]"
+		self.glue_eqtp_id_56["element"] = "value"
+		self.glue_eqtp_id_56["output_type"] = "val"
+		self.glue_eqtp_id_56["minimum"] = round(0,2)
+		self.glue_eqtp_id_56["maximum"] = round(100,2)
+		self.glue_eqtp_id_56["decimal_places"] = 2
+		self.glue_eqtp_id_56["ui_listener"] = "value"
+		self.glue_eqtp_id_56["feedback_brain"] = "feedback_range"
+		self.glue_eqtp_id_56["ctrl_type"] = "absolute"
+		self.glue_eqtp_id_56["enc_first"] = 0
+		self.glue_eqtp_id_56["enc_second"] = 127
+		self.glue_eqtp_id_56["reverse_mode"] = False
+		self.glue_eqtp_id_56["takeover_mode"] = "Value scaling"
+		self.glue_eqtp_id_56["steps"] = 127
+		self.glue_eqtp_id_56["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_eqtp_id_56["LED_feedback"] = "default"
+		self.glue_eqtp_id_56["LED_feedback_active"] = "1"
+		self.glue_eqtp_id_56["LED_on"] = "127"
+		self.glue_eqtp_id_56["LED_off"] = "0"
+		self.glue_eqtp_id_56["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_28"]
+		self.glue_eqtp_id_56["snap_to"] = False
+		self.glue_eqtp_id_56["json_id"] = 56
+		self.glue_eqtp_id_56["mapping_name"] = "Glue-EQTP"
+		self.glue_eqtp_id_56["mapping_type"] = "Parameter"
+		self.glue_eqon_id_55 = {}
+		self.glue_eqon_id_55["attached_to"] = "midi_cc_ch_0_val_29"
+		self.glue_eqon_id_55["track"] = self.track_num(2)
+		self.glue_eqon_id_55["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[13]"
+		self.glue_eqon_id_55["element"] = "value"
+		self.glue_eqon_id_55["output_type"] = "val"
+		self.glue_eqon_id_55["minimum"] = round(0,2)
+		self.glue_eqon_id_55["maximum"] = round(100,2)
+		self.glue_eqon_id_55["decimal_places"] = 2
+		self.glue_eqon_id_55["ui_listener"] = "value"
+		self.glue_eqon_id_55["feedback_brain"] = "feedback_range"
+		self.glue_eqon_id_55["ctrl_type"] = "absolute"
+		self.glue_eqon_id_55["enc_first"] = 125
+		self.glue_eqon_id_55["enc_second"] = 127
+		self.glue_eqon_id_55["reverse_mode"] = False
+		self.glue_eqon_id_55["takeover_mode"] = "None"
+		self.glue_eqon_id_55["steps"] = 127
+		self.glue_eqon_id_55["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_eqon_id_55["LED_feedback"] = "default"
+		self.glue_eqon_id_55["LED_feedback_active"] = "1"
+		self.glue_eqon_id_55["LED_on"] = "127"
+		self.glue_eqon_id_55["LED_off"] = "0"
+		self.glue_eqon_id_55["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_29"]
+		self.glue_eqon_id_55["snap_to"] = True
+		self.glue_eqon_id_55["json_id"] = 55
+		self.glue_eqon_id_55["mapping_name"] = "Glue-EQON"
+		self.glue_eqon_id_55["mapping_type"] = "Parameter"
+		self.glue_eqfq_id_54 = {}
+		self.glue_eqfq_id_54["attached_to"] = "midi_cc_ch_0_val_30"
+		self.glue_eqfq_id_54["track"] = self.track_num(2)
+		self.glue_eqfq_id_54["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[14]"
+		self.glue_eqfq_id_54["element"] = "value"
+		self.glue_eqfq_id_54["output_type"] = "val"
+		self.glue_eqfq_id_54["minimum"] = round(0,2)
+		self.glue_eqfq_id_54["maximum"] = round(100,2)
+		self.glue_eqfq_id_54["decimal_places"] = 2
+		self.glue_eqfq_id_54["ui_listener"] = "value"
+		self.glue_eqfq_id_54["feedback_brain"] = "feedback_range"
+		self.glue_eqfq_id_54["ctrl_type"] = "absolute"
+		self.glue_eqfq_id_54["enc_first"] = 0
+		self.glue_eqfq_id_54["enc_second"] = 127
+		self.glue_eqfq_id_54["reverse_mode"] = False
+		self.glue_eqfq_id_54["takeover_mode"] = "Value scaling"
+		self.glue_eqfq_id_54["steps"] = 127
+		self.glue_eqfq_id_54["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_eqfq_id_54["LED_feedback"] = "default"
+		self.glue_eqfq_id_54["LED_feedback_active"] = "1"
+		self.glue_eqfq_id_54["LED_on"] = "127"
+		self.glue_eqfq_id_54["LED_off"] = "0"
+		self.glue_eqfq_id_54["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_30"]
+		self.glue_eqfq_id_54["snap_to"] = False
+		self.glue_eqfq_id_54["json_id"] = 54
+		self.glue_eqfq_id_54["mapping_name"] = "Glue-EQFq"
+		self.glue_eqfq_id_54["mapping_type"] = "Parameter"
+		self.glue_eqgn_id_53 = {}
+		self.glue_eqgn_id_53["attached_to"] = "midi_cc_ch_0_val_31"
+		self.glue_eqgn_id_53["track"] = self.track_num(2)
+		self.glue_eqgn_id_53["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[15]"
+		self.glue_eqgn_id_53["element"] = "value"
+		self.glue_eqgn_id_53["output_type"] = "val"
+		self.glue_eqgn_id_53["minimum"] = round(0,2)
+		self.glue_eqgn_id_53["maximum"] = round(100,2)
+		self.glue_eqgn_id_53["decimal_places"] = 2
+		self.glue_eqgn_id_53["ui_listener"] = "value"
+		self.glue_eqgn_id_53["feedback_brain"] = "feedback_range"
+		self.glue_eqgn_id_53["ctrl_type"] = "absolute"
+		self.glue_eqgn_id_53["enc_first"] = 0
+		self.glue_eqgn_id_53["enc_second"] = 127
+		self.glue_eqgn_id_53["reverse_mode"] = False
+		self.glue_eqgn_id_53["takeover_mode"] = "Value scaling"
+		self.glue_eqgn_id_53["steps"] = 127
+		self.glue_eqgn_id_53["LED_mapping_type_needs_feedback"] = "1"
+		self.glue_eqgn_id_53["LED_feedback"] = "default"
+		self.glue_eqgn_id_53["LED_feedback_active"] = "1"
+		self.glue_eqgn_id_53["LED_on"] = "127"
+		self.glue_eqgn_id_53["LED_off"] = "0"
+		self.glue_eqgn_id_53["LED_send_feedback_to_selected"] = ["midi_cc_ch_0_val_31"]
+		self.glue_eqgn_id_53["snap_to"] = True
+		self.glue_eqgn_id_53["json_id"] = 53
+		self.glue_eqgn_id_53["mapping_name"] = "Glue-EQGN"
+		self.glue_eqgn_id_53["mapping_type"] = "Parameter"
 		self.cheq_deon_id_24 = {}
 		self.cheq_deon_id_24["attached_to"] = "midi_cc_ch_0_val_64"
 		self.cheq_deon_id_24["track"] = self.track_num(2)
-		self.cheq_deon_id_24["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[0]"
+		self.cheq_deon_id_24["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[0]"
 		self.cheq_deon_id_24["element"] = "value"
 		self.cheq_deon_id_24["output_type"] = "val"
 		self.cheq_deon_id_24["minimum"] = round(0,2)
@@ -1570,7 +1935,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_hign_id_46 = {}
 		self.cheq_hign_id_46["attached_to"] = "midi_cc_ch_0_val_68"
 		self.cheq_hign_id_46["track"] = self.track_num(2)
-		self.cheq_hign_id_46["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[5]"
+		self.cheq_hign_id_46["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[5]"
 		self.cheq_hign_id_46["element"] = "value"
 		self.cheq_hign_id_46["output_type"] = "val"
 		self.cheq_hign_id_46["minimum"] = round(0,2)
@@ -1597,7 +1962,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_gn_id_30 = {}
 		self.cheq_gn_id_30["attached_to"] = "midi_cc_ch_0_val_65"
 		self.cheq_gn_id_30["track"] = self.track_num(2)
-		self.cheq_gn_id_30["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[6]"
+		self.cheq_gn_id_30["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[6]"
 		self.cheq_gn_id_30["element"] = "value"
 		self.cheq_gn_id_30["output_type"] = "val"
 		self.cheq_gn_id_30["minimum"] = round(0,2)
@@ -1624,7 +1989,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_mign_id_42 = {}
 		self.cheq_mign_id_42["attached_to"] = "midi_cc_ch_0_val_72"
 		self.cheq_mign_id_42["track"] = self.track_num(2)
-		self.cheq_mign_id_42["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[3]"
+		self.cheq_mign_id_42["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[3]"
 		self.cheq_mign_id_42["element"] = "value"
 		self.cheq_mign_id_42["output_type"] = "val"
 		self.cheq_mign_id_42["minimum"] = round(0,2)
@@ -1651,7 +2016,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_mifq_id_38 = {}
 		self.cheq_mifq_id_38["attached_to"] = "midi_cc_ch_0_val_73"
 		self.cheq_mifq_id_38["track"] = self.track_num(2)
-		self.cheq_mifq_id_38["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[4]"
+		self.cheq_mifq_id_38["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[4]"
 		self.cheq_mifq_id_38["element"] = "value"
 		self.cheq_mifq_id_38["output_type"] = "val"
 		self.cheq_mifq_id_38["minimum"] = round(0,2)
@@ -1678,7 +2043,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_logn_id_34 = {}
 		self.cheq_logn_id_34["attached_to"] = "midi_cc_ch_0_val_76"
 		self.cheq_logn_id_34["track"] = self.track_num(2)
-		self.cheq_logn_id_34["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[2]"
+		self.cheq_logn_id_34["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[2]"
 		self.cheq_logn_id_34["element"] = "value"
 		self.cheq_logn_id_34["output_type"] = "val"
 		self.cheq_logn_id_34["minimum"] = round(0,2)
@@ -1705,7 +2070,7 @@ class css_ec4_v03(ControlSurface):
 		self.cheq_hpf_id_27 = {}
 		self.cheq_hpf_id_27["attached_to"] = "midi_cc_ch_0_val_77"
 		self.cheq_hpf_id_27["track"] = self.track_num(2)
-		self.cheq_hpf_id_27["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m2\")].parameters[1]"
+		self.cheq_hpf_id_27["module"] = "self.song().view.selected_track.devices[self.get_modifier_value(\"m5\")].parameters[1]"
 		self.cheq_hpf_id_27["element"] = "value"
 		self.cheq_hpf_id_27["output_type"] = "val"
 		self.cheq_hpf_id_27["minimum"] = round(0,2)
@@ -1743,7 +2108,22 @@ class css_ec4_v03(ControlSurface):
 				loop_number = loop_number + 1
 			loop_is_active = False
 		except Exception as e:
-			self.log_message("csslog:(EC4 v0.3) There's a problem with 'Action Block 1' in reaction 'selectCompressor' (from 'Song - selected track' listener) >> ")
+			self.log_message("csslog:(EC4 v0.4) There's a problem with 'Action Block 1' in reaction 'selectCompressor' (from 'Song - selected track' listener) >> ")
+			self.log_message("csslog: >> " + str(e) )
+	def _mode1_self_song_view_add_selected_track_listener_id_50(self):
+		try:
+			reaction_listener_number = 1
+			loop_is_active = False
+			loop_number = 0
+			loop_result_count = len(self.song().view.selected_track.devices)
+			for item in self.song().view.selected_track.devices:
+				loop_is_active = True
+				if self.song().view.selected_track.devices[loop_number].class_display_name == "Glue Compressor":
+					self.set_modifier_value("m2", loop_number)
+				loop_number = loop_number + 1
+			loop_is_active = False
+		except Exception as e:
+			self.log_message("csslog:(EC4 v0.4) There's a problem with 'Action Block 1' in reaction 'selectGlueCompressor' (from 'Song - selected track' listener) >> ")
 			self.log_message("csslog: >> " + str(e) )
 	def _mode1_self_song_view_add_selected_track_listener_id_22(self):
 		try:
@@ -1754,11 +2134,11 @@ class css_ec4_v03(ControlSurface):
 			for item in self.song().view.selected_track.devices:
 				loop_is_active = True
 				if self.song().view.selected_track.devices[loop_number].class_display_name == "Channel EQ":
-					self.set_modifier_value("m2", loop_number)
+					self.set_modifier_value("m5", loop_number)
 				loop_number = loop_number + 1
 			loop_is_active = False
 		except Exception as e:
-			self.log_message("csslog:(EC4 v0.3) There's a problem with 'Action Block 1' in reaction 'selectChannelEQ' (from 'Song - selected track' listener) >> ")
+			self.log_message("csslog:(EC4 v0.4) There's a problem with 'Action Block 1' in reaction 'selectChannelEQ' (from 'Song - selected track' listener) >> ")
 			self.log_message("csslog: >> " + str(e) )
 	def _mode1_led_listeners(self):
 		try:
@@ -1875,6 +2255,86 @@ class css_ec4_v03(ControlSurface):
 		except:
 			self.log("_mode1_ui_listeners: " + str(self.comp_scmx_id_15["element"]) + " does not exist")
 		try:
+			self.glue_deon_id_51_led = eval(self.glue_deon_id_51["module"])
+			self.glue_deon_id_51_led.add_value_listener(self.glue_deon_id_51_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_deon_id_51["element"]) + " does not exist")
+		try:
+			self.glue_thrs_id_52_led = eval(self.glue_thrs_id_52["module"])
+			self.glue_thrs_id_52_led.add_value_listener(self.glue_thrs_id_52_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_thrs_id_52["element"]) + " does not exist")
+		try:
+			self.glue_rang_id_66_led = eval(self.glue_rang_id_66["module"])
+			self.glue_rang_id_66_led.add_value_listener(self.glue_rang_id_66_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_rang_id_66["element"]) + " does not exist")
+		try:
+			self.glue_mkup_id_65_led = eval(self.glue_mkup_id_65["module"])
+			self.glue_mkup_id_65_led.add_value_listener(self.glue_mkup_id_65_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_mkup_id_65["element"]) + " does not exist")
+		try:
+			self.glue_atck_id_64_led = eval(self.glue_atck_id_64["module"])
+			self.glue_atck_id_64_led.add_value_listener(self.glue_atck_id_64_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_atck_id_64["element"]) + " does not exist")
+		try:
+			self.glue_rati_id_63_led = eval(self.glue_rati_id_63["module"])
+			self.glue_rati_id_63_led.add_value_listener(self.glue_rati_id_63_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_rati_id_63["element"]) + " does not exist")
+		try:
+			self.glue_rels_id_62_led = eval(self.glue_rels_id_62["module"])
+			self.glue_rels_id_62_led.add_value_listener(self.glue_rels_id_62_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_rels_id_62["element"]) + " does not exist")
+		try:
+			self.glue_drwt_id_61_led = eval(self.glue_drwt_id_61["module"])
+			self.glue_drwt_id_61_led.add_value_listener(self.glue_drwt_id_61_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_drwt_id_61["element"]) + " does not exist")
+		try:
+			self.glue_sclp_id_60_led = eval(self.glue_sclp_id_60["module"])
+			self.glue_sclp_id_60_led.add_value_listener(self.glue_sclp_id_60_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_sclp_id_60["element"]) + " does not exist")
+		try:
+			self.glue_scon_id_59_led = eval(self.glue_scon_id_59["module"])
+			self.glue_scon_id_59_led.add_value_listener(self.glue_scon_id_59_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_scon_id_59["element"]) + " does not exist")
+		try:
+			self.glue_scgn_id_58_led = eval(self.glue_scgn_id_58["module"])
+			self.glue_scgn_id_58_led.add_value_listener(self.glue_scgn_id_58_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_scgn_id_58["element"]) + " does not exist")
+		try:
+			self.glue_scmx_id_57_led = eval(self.glue_scmx_id_57["module"])
+			self.glue_scmx_id_57_led.add_value_listener(self.glue_scmx_id_57_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_scmx_id_57["element"]) + " does not exist")
+		try:
+			self.glue_eqtp_id_56_led = eval(self.glue_eqtp_id_56["module"])
+			self.glue_eqtp_id_56_led.add_value_listener(self.glue_eqtp_id_56_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_eqtp_id_56["element"]) + " does not exist")
+		try:
+			self.glue_eqon_id_55_led = eval(self.glue_eqon_id_55["module"])
+			self.glue_eqon_id_55_led.add_value_listener(self.glue_eqon_id_55_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_eqon_id_55["element"]) + " does not exist")
+		try:
+			self.glue_eqfq_id_54_led = eval(self.glue_eqfq_id_54["module"])
+			self.glue_eqfq_id_54_led.add_value_listener(self.glue_eqfq_id_54_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_eqfq_id_54["element"]) + " does not exist")
+		try:
+			self.glue_eqgn_id_53_led = eval(self.glue_eqgn_id_53["module"])
+			self.glue_eqgn_id_53_led.add_value_listener(self.glue_eqgn_id_53_led_listener)
+		except:
+			self.log("_mode1_ui_listeners: " + str(self.glue_eqgn_id_53["element"]) + " does not exist")
+		try:
 			self.cheq_deon_id_24_led = eval(self.cheq_deon_id_24["module"])
 			self.cheq_deon_id_24_led.add_value_listener(self.cheq_deon_id_24_led_listener)
 		except:
@@ -1975,6 +2435,70 @@ class css_ec4_v03(ControlSurface):
 		except:
 			self.log("remove__mode1_ui_listeners: " + str(self.comp_scmx_id_15["element"]) + " does not exist")
 		try:
+			self.glue_deon_id_51_led.remove_value_listener(self.glue_deon_id_51_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_deon_id_51["element"]) + " does not exist")
+		try:
+			self.glue_thrs_id_52_led.remove_value_listener(self.glue_thrs_id_52_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_thrs_id_52["element"]) + " does not exist")
+		try:
+			self.glue_rang_id_66_led.remove_value_listener(self.glue_rang_id_66_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_rang_id_66["element"]) + " does not exist")
+		try:
+			self.glue_mkup_id_65_led.remove_value_listener(self.glue_mkup_id_65_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_mkup_id_65["element"]) + " does not exist")
+		try:
+			self.glue_atck_id_64_led.remove_value_listener(self.glue_atck_id_64_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_atck_id_64["element"]) + " does not exist")
+		try:
+			self.glue_rati_id_63_led.remove_value_listener(self.glue_rati_id_63_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_rati_id_63["element"]) + " does not exist")
+		try:
+			self.glue_rels_id_62_led.remove_value_listener(self.glue_rels_id_62_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_rels_id_62["element"]) + " does not exist")
+		try:
+			self.glue_drwt_id_61_led.remove_value_listener(self.glue_drwt_id_61_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_drwt_id_61["element"]) + " does not exist")
+		try:
+			self.glue_sclp_id_60_led.remove_value_listener(self.glue_sclp_id_60_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_sclp_id_60["element"]) + " does not exist")
+		try:
+			self.glue_scon_id_59_led.remove_value_listener(self.glue_scon_id_59_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_scon_id_59["element"]) + " does not exist")
+		try:
+			self.glue_scgn_id_58_led.remove_value_listener(self.glue_scgn_id_58_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_scgn_id_58["element"]) + " does not exist")
+		try:
+			self.glue_scmx_id_57_led.remove_value_listener(self.glue_scmx_id_57_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_scmx_id_57["element"]) + " does not exist")
+		try:
+			self.glue_eqtp_id_56_led.remove_value_listener(self.glue_eqtp_id_56_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_eqtp_id_56["element"]) + " does not exist")
+		try:
+			self.glue_eqon_id_55_led.remove_value_listener(self.glue_eqon_id_55_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_eqon_id_55["element"]) + " does not exist")
+		try:
+			self.glue_eqfq_id_54_led.remove_value_listener(self.glue_eqfq_id_54_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_eqfq_id_54["element"]) + " does not exist")
+		try:
+			self.glue_eqgn_id_53_led.remove_value_listener(self.glue_eqgn_id_53_led_listener)
+		except:
+			self.log("remove__mode1_ui_listeners: " + str(self.glue_eqgn_id_53["element"]) + " does not exist")
+		try:
 			self.cheq_deon_id_24_led.remove_value_listener(self.cheq_deon_id_24_led_listener)
 		except:
 			self.log("remove__mode1_ui_listeners: " + str(self.cheq_deon_id_24["element"]) + " does not exist")
@@ -2019,6 +2543,22 @@ class css_ec4_v03(ControlSurface):
 		self.comp_scon_id_17_led_listener()
 		self.comp_scgn_id_16_led_listener()
 		self.comp_scmx_id_15_led_listener()
+		self.glue_deon_id_51_led_listener()
+		self.glue_thrs_id_52_led_listener()
+		self.glue_rang_id_66_led_listener()
+		self.glue_mkup_id_65_led_listener()
+		self.glue_atck_id_64_led_listener()
+		self.glue_rati_id_63_led_listener()
+		self.glue_rels_id_62_led_listener()
+		self.glue_drwt_id_61_led_listener()
+		self.glue_sclp_id_60_led_listener()
+		self.glue_scon_id_59_led_listener()
+		self.glue_scgn_id_58_led_listener()
+		self.glue_scmx_id_57_led_listener()
+		self.glue_eqtp_id_56_led_listener()
+		self.glue_eqon_id_55_led_listener()
+		self.glue_eqfq_id_54_led_listener()
+		self.glue_eqgn_id_53_led_listener()
 		self.cheq_deon_id_24_led_listener()
 		self.cheq_hign_id_46_led_listener()
 		self.cheq_gn_id_30_led_listener()
@@ -2058,6 +2598,38 @@ class css_ec4_v03(ControlSurface):
 		self.feedback_brain(self.comp_scgn_id_16)
 	def comp_scmx_id_15_led_listener(self):
 		self.feedback_brain(self.comp_scmx_id_15)
+	def glue_deon_id_51_led_listener(self):
+		self.feedback_brain(self.glue_deon_id_51)
+	def glue_thrs_id_52_led_listener(self):
+		self.feedback_brain(self.glue_thrs_id_52)
+	def glue_rang_id_66_led_listener(self):
+		self.feedback_brain(self.glue_rang_id_66)
+	def glue_mkup_id_65_led_listener(self):
+		self.feedback_brain(self.glue_mkup_id_65)
+	def glue_atck_id_64_led_listener(self):
+		self.feedback_brain(self.glue_atck_id_64)
+	def glue_rati_id_63_led_listener(self):
+		self.feedback_brain(self.glue_rati_id_63)
+	def glue_rels_id_62_led_listener(self):
+		self.feedback_brain(self.glue_rels_id_62)
+	def glue_drwt_id_61_led_listener(self):
+		self.feedback_brain(self.glue_drwt_id_61)
+	def glue_sclp_id_60_led_listener(self):
+		self.feedback_brain(self.glue_sclp_id_60)
+	def glue_scon_id_59_led_listener(self):
+		self.feedback_brain(self.glue_scon_id_59)
+	def glue_scgn_id_58_led_listener(self):
+		self.feedback_brain(self.glue_scgn_id_58)
+	def glue_scmx_id_57_led_listener(self):
+		self.feedback_brain(self.glue_scmx_id_57)
+	def glue_eqtp_id_56_led_listener(self):
+		self.feedback_brain(self.glue_eqtp_id_56)
+	def glue_eqon_id_55_led_listener(self):
+		self.feedback_brain(self.glue_eqon_id_55)
+	def glue_eqfq_id_54_led_listener(self):
+		self.feedback_brain(self.glue_eqfq_id_54)
+	def glue_eqgn_id_53_led_listener(self):
+		self.feedback_brain(self.glue_eqgn_id_53)
 	def cheq_deon_id_24_led_listener(self):
 		self.feedback_brain(self.cheq_deon_id_24)
 	def cheq_hign_id_46_led_listener(self):
@@ -4003,4 +4575,4 @@ class css_ec4_v03(ControlSurface):
 			getattr(self, reaction_method)()
 	def disconnect(self):
 		self.call_script_reaction(None, None, 'script_is_disconnected')
-		super(css_ec4_v03, self).disconnect()
+		super(css_ec4_v04, self).disconnect()
